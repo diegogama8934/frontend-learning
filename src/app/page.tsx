@@ -8,17 +8,17 @@ export default function Home() {
         <div className="flex flex-col gap-2">
           <h1 className="text-4xl font-bold text-white">Learning Web Development</h1>
           <span className="text-white">An easy guide to start developing on the Web</span>
-          <small className="text-gray-500">Made for FIF or CD members</small>
+          <small className="text-gray-500">Made for CD members</small>
         </div>
 
       </div>
       <div className="flex flex-wrap gap-12 w-5/6">
         {
           landingTechnologiesLogos.map(img => (
-            <div key={img.src} className="w-[200px] flex flex-col gap-4">
+            <div key={img.src} className="w-[200px] flex flex-col gap-8 items-center">
               <Image {...img} alt={img.alt} className="h-[120px]" />
 
-              <span className="text-xl font-bold text-center">{img.name}</span>
+              <span className="text-xl w-fit font-bold bg-gradient-to-r from-gray-800 to-gray-700 text-transparent bg-clip-text">{img.name}</span>
             </div>
           ))
         }
