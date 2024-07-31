@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Barlow } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const rubik = Barlow({ weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], subsets: ["latin"] });
+const inter = Inter({ weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Learning FrontEnd",
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={rubik.className}>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
